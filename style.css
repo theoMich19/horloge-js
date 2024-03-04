@@ -1,0 +1,52 @@
+body,
+html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+#clock-container {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+#digital-clock {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#analog-clock {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+#timezone-selector {
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#timezone-selector:hover {
+  border-color: #bbb;
+}
+
+#timezone-selector:focus {
+  border-color: #777;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}

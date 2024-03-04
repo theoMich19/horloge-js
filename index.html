@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Horloge Numérique et Analogique avec Fuseaux Horaires</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="clock-container">
+      <select id="timezone-selector">
+        <option value="Europe/Paris">Paris (GMT+1)</option>
+        <option value="America/New_York">New York (GMT-5)</option>
+        <option value="Asia/Tokyo">Tokyo (GMT+9)</option>
+        <option value="Australia/Sydney">Sydney (GMT+11)</option>
+      </select>
+      <div id="digital-clock"></div>
+      <canvas id="analog-clock" width="400" height="400"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
