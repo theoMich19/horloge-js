@@ -8,11 +8,57 @@
   <body>
     <div id="clock-container">
       <select id="timezone-selector">
-        <option value="Europe/Paris">Paris (GMT+1)</option>
-        <option value="America/New_York">New York (GMT-5)</option>
-        <option value="Asia/Tokyo">Tokyo (GMT+9)</option>
-        <option value="Australia/Sydney">Sydney (GMT+11)</option>
+        <optgroup label="Amérique du Nord">
+          <option value="America/New_York">New York (GMT-5)</option>
+          <option value="America/Chicago">Chicago (GMT-6)</option>
+          <option value="America/Denver">Denver (GMT-7)</option>
+          <option value="America/Los_Angeles">Los Angeles (GMT-8)</option>
+          <option value="America/Anchorage">Anchorage (GMT-9)</option>
+          <option value="America/Adak">Adak (GMT-10)</option>
+        </optgroup>
+        <optgroup label="Amérique du Sud">
+          <option value="America/Caracas">Caracas (GMT-4)</option>
+          <option value="America/Bogota">Bogota (GMT-5)</option>
+          <option value="America/Lima">Lima (GMT-5)</option>
+          <option value="America/Rio_Branco">Rio Branco (GMT-5)</option>
+          <option value="America/Santiago">Santiago (GMT-4)</option>
+          <option value="America/Buenos_Aires">Buenos Aires (GMT-3)</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option value="Europe/London">Londres (GMT)</option>
+          <option value="Europe/Paris">Paris (GMT+1)</option>
+          <option value="Europe/Berlin">Berlin (GMT+1)</option>
+          <option value="Europe/Athens">Athènes (GMT+2)</option>
+          <option value="Europe/Moscow">Moscou (GMT+3)</option>
+        </optgroup>
+        <optgroup label="Asie">
+          <option value="Asia/Tehran">Téhéran (GMT+3:30)</option>
+          <option value="Asia/Dubai">Dubaï (GMT+4)</option>
+          <option value="Asia/Kabul">Kaboul (GMT+4:30)</option>
+          <option value="Asia/Karachi">Karachi (GMT+5)</option>
+          <option value="Asia/Kolkata">Kolkata (GMT+5:30)</option>
+          <option value="Asia/Kathmandu">Katmandou (GMT+5:45)</option>
+          <option value="Asia/Dhaka">Dacca (GMT+6)</option>
+          <option value="Asia/Bangkok">Bangkok (GMT+7)</option>
+          <option value="Asia/Singapore">Singapour (GMT+8)</option>
+          <option value="Asia/Tokyo">Tokyo (GMT+9)</option>
+          <option value="Asia/Seoul">Séoul (GMT+9)</option>
+        </optgroup>
+        <optgroup label="Australie et Océanie">
+          <option value="Australia/Perth">Perth (GMT+8)</option>
+          <option value="Australia/Adelaide">Adélaïde (GMT+9:30)</option>
+          <option value="Australia/Sydney">Sydney (GMT+10)</option>
+          <option value="Pacific/Auckland">Auckland (GMT+12)</option>
+          <option value="Pacific/Fiji">Fidji (GMT+12)</option>
+        </optgroup>
+        <optgroup label="Autres">
+          <option value="Atlantic/Azores">Açores (GMT-1)</option>
+          <option value="Pacific/Midway">Midway (GMT-11)</option>
+          <option value="Atlantic/Reykjavik">Reykjavik (GMT)</option>
+          <option value="Pacific/Tongatapu">Tongatapu (GMT+13)</option>
+        </optgroup>
       </select>
+
       <div id="digital-clock"></div>
       <canvas id="analog-clock" width="400" height="400"></canvas>
     </div>

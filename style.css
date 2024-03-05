@@ -4,16 +4,22 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+}
+body {
+  background-image: url("planet.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #clock-container {
   text-align: center;
-  background: #fff;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: fit-content;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #digital-clock {
